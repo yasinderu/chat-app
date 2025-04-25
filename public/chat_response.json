@@ -68,6 +68,13 @@
           "message": "",
           "media_url": "https://www.youtube.com/embed/9xOsBDBV9fI?si=ZUN0CH8m3d_W30SO",
           "sender": "admin@mail.com"
+        },
+        {
+          "id": 885519,
+          "type": "pdf",
+          "message": "",
+          "media_url": "/erd-chat.pdf",
+          "sender": "admin@mail.com"
         }
       ]
     }

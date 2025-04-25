@@ -97,8 +97,25 @@ const Chat = () => {
                     frameborder="0"
                     allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     referrerpolicy="strict-origin-when-cross-origin"
-                    allowfullscreen
+                    allowFullScreen
                   ></iframe>
+                )}
+                {comment.type === "pdf" && (
+                  <div>
+                    <iframe
+                      src={comment.media_url}
+                      title="PDF preview"
+                      className="w-full h-64"
+                    ></iframe>
+                    <a
+                      href={comment.media_url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-blue-500 underline text-sm block mt-1"
+                    >
+                      Buka PDF
+                    </a>
+                  </div>
                 )}
                 {comment && (
                   <span className="block text-sm">{comment.message}</span>
